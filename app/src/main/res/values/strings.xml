@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">IntentsProj</string>
+    <string name="okbtn">OK</string>
+    <string name="secondActTxt">This is the second activity</string>
+    <string name="num1txt">Number 1</string>
+    <string name="num2txt">Number 2</string>
+    <string name="addButtonSymbol">+</string>
+    <string name="subtractButtonSymbol">-</string>
+    <string name="MultiplyButtonSymbol">*</string>
+    <string name="divideButtonSymbol">/</string>
+</resources>
