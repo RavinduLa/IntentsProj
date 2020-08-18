@@ -8,4 +8,5 @@
     <string name="subtractButtonSymbol">-</string>
     <string name="MultiplyButtonSymbol">*</string>
     <string name="divideButtonSymbol">/</string>
+    <string name="customToastMessage">Openning Calculator</string>
 </resources>

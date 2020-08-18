@@ -10,6 +10,7 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -42,8 +43,17 @@ public class FirstActivity extends AppCompatActivity {
                 String message = "You pressed the OK button";
                 int duration  = Toast.LENGTH_SHORT;
 
-                Toast toast = Toast.makeText(context,message,duration);
-                toast.setGravity(Gravity.BOTTOM|Gravity.CENTER,0,0);
+                //Creating the LayoutInflater instance
+                LayoutInflater li = getLayoutInflater();
+
+                //Getting the View object as defined in the customtoast.xml file
+                View layout = li.inflate(R.layout.custom_toast, (ViewGroup)findViewById(R.id.custom_toast_layout));
+
+
+                Toast toast = new Toast(getApplicationContext());
+                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.setGravity(Gravity.CENTER_VERTICAL,0,0);
+                toast.setView(layout);
                 toast.show();
                 Log.i("firstActivity","after toast");
 
